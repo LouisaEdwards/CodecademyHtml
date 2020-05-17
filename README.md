@@ -1,4 +1,5 @@
 # CodecademyHtml
+*//
 HTML Syntax 
 -HMTL is composed of elements
 -elements are made up of an opening tag, content, and a closing tag 
@@ -226,4 +227,6 @@ Text area
 Submit button 
 -to create a submit button, create an input element with type submit 
 -the value assigned to the value attribute shows up on the button 
--if you don't include a value attribute, submit shows up on the button by default 
+-if you don't include a value attribute, submit shows up on the button by default
+
+*//
