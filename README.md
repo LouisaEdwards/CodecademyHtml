@@ -229,4 +229,68 @@ Submit button
 -the value assigned to the value attribute shows up on the button 
 -if you don't include a value attribute, submit shows up on the button by default
 
+Form Validation
+-validation is checking user provided data against required data
+-server-side validation occurs when data is sent to a server for validation 
+-client-side validation occurs when we check the data on the browser (before the data is sent to the server)
+  -it is good for quick validation (ie limiting length or using a regex)
+
+-to make an input required (not optional), add the required attribute to the input element (just write required, don't need to set it equal to anything) 
+-you can assign a minimum and maximum for a number field using the min and max attributes 
+-to add a minimum and maximum number of characters for a text field, use the minnum and maxnum characters 
+-to do pattern checking, set the pattern attribute equal to a regex 
+
+Semantic HTML
+-a header element is a container for navigational links or introductory content containing h1 to h6 headings
+-a nav element can be used to define a block of navigation links such as menus and tables of contents 
+  -it can be used inside a header element or on its own 
+-two more structural elements are main and footer --> they help describe where an element is located 
+-the section element is used to define elements in a document with the same theme 
+-the article element holds content that makes sense on its own 
+-<figure> is used to encapsulate media that is referenced in the main flow of the document 
+  -you can add a caption to a figure using the <figcaption> element 
+-the audio element is used to embed audio in your website 
+   -create an audio element and then use a source element for the link
+  
+  example: 
+  <audio>
+    <source src="iAmAnAudioFile.mp3" type="audio/mp3">
+  </audio>
+-in the example above, the type is not always necessary but is good to include bc it helps the browser to check if the audio type is supported 
+-the audio element has lots of attributes, such as autoplay and controls, which add autoplay and controls respectively 
+  
+  
+Example personal website code: 
+<!DOCTYPE html>
+<head>
+  <title>Anna Dowlin</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("http://dash.ga.co/assets/anna-bg.png");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <img src="/assets/anna.png">
+  <p>Hi! I'm Anna, a NYC-based marketer. Say hello!</p>
+  <input type="email" placeholder="Your email">
+  <input type="submit">
+</body>
 *//
